@@ -40,14 +40,7 @@ import socket
 port = 60000                    
 s = socket.socket()              
 host = socket.gethostname()      
-s.bind((host, port))             
-1. Import the necessary python modules.
- 2. Create a socket connection using socket module.
- 3. Send the message to write into the file to the client file.
- 4. Open the file and then send it to the client in byte format.
- 5. In the client side receive the file from server and then write the content into it.
- 
-REG NO:  
+s.bind((host, port))              
 s.listen(5)                      
 while True: 
     conn, addr = s.accept()      
